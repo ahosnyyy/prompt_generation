@@ -1,0 +1,355 @@
+refs:
+- id: dash_ref_01
+  image_path: refs/dash_ref_01.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_01.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera looking back at the front seats and rear bench. Visible elements include
+    the steering wheel on the right side of frame, dashboard edges, center console
+    with armrest/storage, door panels, and a panoramic-style roof area; the seats
+    are high-back with headrests and the interior is predominantly dark.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - lightly tinted windows
+    cabin_color:
+    - black
+- id: dash_ref_02
+  image_path: refs/dash_ref_02.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_02.txt
+  arms_visible: true
+  cabin_description: A modern sedan cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera looking back at the front seats. The interior shows a black dashboard and
+    door panels, a steering wheel on the left, a center console between the front
+    seats, a rearview mirror area/overhead console, and black leather bucket-style
+    seats with rear bench seating visible behind.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_03
+  image_path: refs/dash_ref_03.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_03.txt
+  arms_visible: false
+  cabin_description: A passenger car cabin (sedan/wagon-like) viewed from a wide-angle
+    dashboard-mounted camera near the windshield, showing the steering wheel, dashboard,
+    center console, and rearview mirror area. The interior has dark leather bucket-style
+    front seats with headrests, a rear bench seat, and a large panoramic-style glass
+    roof panel overhead.
+  conditions:
+    lighting:
+    - overcast
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - lightly tinted windows
+    cabin_color:
+    - black
+- id: dash_ref_04
+  image_path: refs/dash_ref_04.jpg
+  occupancy: 1
+  person_role: driver
+  template_file: refs/dash_ref_04.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a wide-angle dashboard/windshield-mounted
+    camera facing the front seats, showing the front passenger seat, rear bench, and
+    part of the driver-side steering wheel and door trim. The interior features black
+    leather bucket-style seats with headrests and a large panoramic glass roof overhead.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_05
+  image_path: refs/dash_ref_05.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_05.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a high, wide-angle camera mounted near
+    the top-center of the windshield/roofline looking back at the front seats. The
+    interior shows a black dashboard edge, door panels, headliner, and a rear bench
+    seat with a center armrest, with leather seating and no rearview mirror visible
+    in frame.
+  conditions:
+    lighting:
+    - overcast
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_06
+  image_path: refs/dash_ref_06.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_06.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a wide-angle dash/windshield-mounted camera
+    near the top center, capturing the front seats and part of the rear bench. Visible
+    elements include the steering wheel on the right side of frame, front headrests,
+    door panels, and a large panoramic glass roof with sunshade/trim overhead; seats
+    appear to be standard bucket-style.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - lightly tinted windows
+    cabin_color:
+    - black
+- id: dash_ref_07
+  image_path: refs/dash_ref_07.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_07.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a high, wide-angle dashcam mounted near
+    the top-center of the windshield, capturing the front seats and part of the rear
+    bench. Visible elements include the steering wheel at the right edge, dashboard/upper
+    windshield area, rearview mirror housing, door panels with metallic handles, and
+    headrests with a dark center console area between the front seats.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_08
+  image_path: refs/dash_ref_08.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_08.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera looking back across the front seats. The interior shows the steering wheel
+    at the right side of frame, dashboard and door panels, front headrests, and a
+    rearview mirror/sun visor area at the top, with a dark center area between the
+    front seats.
+  conditions:
+    lighting:
+    - overcast
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_09
+  image_path: refs/dash_ref_09.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_09.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera facing the front seats. Visible are the front seat headrests, door panels,
+    rear bench area, and the upper windshield/visor area; the steering wheel and center
+    console are mostly out of frame.
+  conditions:
+    lighting:
+    - overcast
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - fabric seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_10
+  image_path: refs/dash_ref_10.jpg
+  occupancy: 1
+  person_role: driver
+  template_file: refs/dash_ref_10.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera looking back across the front seats and rear bench. The interior shows
+    a steering wheel at the front right, front and rear headrests, a center armrest/console
+    area, and a rearview mirror area with a large panoramic-style roof panel overhead.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_11
+  image_path: refs/dash_ref_11.jpg
+  occupancy: 1
+  person_role: driver
+  template_file: refs/dash_ref_11.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a high, wide-angle dash/windshield-mounted
+    camera facing the front seats and rear bench. The interior shows a steering wheel
+    at the right edge, door panels with metallic handles, a rear bench with headrests,
+    and black leather seating with a dark headliner and trim.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_12
+  image_path: refs/dash_ref_12.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_12.txt
+  arms_visible: false
+  cabin_description: Sedan cabin viewed from a high, wide-angle dash-mounted camera
+    near the windshield, looking back at the front seats. The interior shows the steering
+    wheel edge, door panels with window switches, headrests, and a rear parcel shelf;
+    the seats appear to be standard bucket-style with integrated headrests and a dark
+    trim theme.
+  conditions:
+    lighting:
+    - dim cabin
+    weather:
+    - foggy
+    time:
+    - night
+    seat_type:
+    - fabric seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_13
+  image_path: refs/dash_ref_13.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_13.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a high, wide-angle dashcam mounted near
+    the top center of the windshield. Visible are the steering wheel, dashboard and
+    center area, rearview mirror region, and front bucket seats with headrests, along
+    with door panels featuring trim inserts.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_14
+  image_path: refs/dash_ref_14.jpg
+  occupancy: 1
+  person_role: passenger
+  template_file: refs/dash_ref_14.txt
+  arms_visible: true
+  cabin_description: SUV cabin viewed from a high, wide-angle dashboard/windshield-mounted
+    camera facing the front seats. Visible are the front leather bucket seats with
+    headrests, door panels with window controls, rear bench seat, and a partial view
+    of the steering wheel at the right edge; the center console area is partially
+    visible between the seats.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - black
+- id: dash_ref_15
+  image_path: refs/dash_ref_15.jpg
+  occupancy: 2
+  steering_side: left
+  template_file: refs/dash_ref_15.txt
+  arms_visible: true
+  cabin_description: Sedan cabin viewed from a high, wide-angle dash/windshield-mounted
+    camera looking back at the front and rear seating area. Visible elements include
+    the front door panels with wood trim, headrests, and a rear bench seat; the dashboard/center
+    console and steering wheel are mostly out of frame.
+  conditions:
+    lighting:
+    - bright sunlight
+    weather:
+    - sunny
+    time:
+    - noon
+    seat_type:
+    - leather seats
+    window_tint:
+    - clear windows
+    cabin_color:
+    - beige

@@ -1,0 +1,8 @@
+[single]
+A wide-angle dashboard camera view shows the full front cabin and part of the rear seats in a {cabin_color} car with {seat_type} and {window_tint}. The driver is a {ethnicity} {gender} {age} wearing {clothing_phrase}, {glasses_phrase}, {headwear_phrase}; {seatbelt}, with both arms visible and hands down near the center console while looking downward. The scene is {weather} at {time}, under {lighting} lighting.
+---
+[single]
+From a high, centered dashcam perspective, the frame captures the steering wheel edge, passenger seat, and a broad view of the roofline inside a {cabin_color} cabin with {seat_type} and {window_tint}. A {ethnicity} {gender} {age} driver in {clothing_phrase}, {glasses_phrase}, {headwear_phrase} sits upright but leans slightly toward the center console, arms visible and forearms angled down; {seatbelt}. The scene is {weather} at {time}, under {lighting} lighting.
+---
+[single]
+A front-facing interior camera with a wide field of view shows the driver on the right side of the frame and the empty front passenger seat on the left, inside a {cabin_color} car with {seat_type} and {window_tint}. The driver is a {ethnicity} {gender} {age} wearing {clothing_phrase}, {glasses_phrase}, {headwear_phrase}; {seatbelt}, looking down with both arms visible and hands positioned near their lap/center console area. The scene is {weather} at {time}, under {lighting} lighting.

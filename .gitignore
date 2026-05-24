@@ -1,0 +1,18 @@
+# Data
+data/
+
+# Reference images (large binaries — user provides locally)
+refs/*.png
+refs/*.jpg
+refs/*.jpeg
+
+# Environment
+.env
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.cache/

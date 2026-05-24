@@ -1,0 +1,16 @@
+# Bounding boxes for dash_ref_01 (occupancy: 2)
+# Format: [x_min, y_min, x_max, y_max] normalized 0-1
+
+image_size: [1920, 1080]
+
+bboxes:
+  driver:
+    clothing: [0.0, 0.0, 0.0, 0.0]
+    headwear: [0.0, 0.0, 0.0, 0.0]
+    glasses: [0.0, 0.0, 0.0, 0.0]
+    inner_clothing: [0.0, 0.0, 0.0, 0.0]
+  passenger:
+    clothing: [0.0, 0.0, 0.0, 0.0]
+    headwear: [0.0, 0.0, 0.0, 0.0]
+    glasses: [0.0, 0.0, 0.0, 0.0]
+    inner_clothing: [0.0, 0.0, 0.0, 0.0]

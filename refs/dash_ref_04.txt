@@ -1,0 +1,8 @@
+[single]
+A wide-angle dashboard camera view shows a {ethnicity} {gender} {age} seated in the front-right seat of a {cabin_color} car with {seat_type} and {window_tint}. They wear {clothing_phrase}, {glasses_phrase}, {headwear_phrase}, with {seatbelt}; one arm is raised holding a phone to the ear while the other arm rests lower near their lap/center area. The scene is {weather} at {time}, under {lighting} lighting.
+---
+[single]
+From a centered dashcam perspective, the front passenger area dominates the frame, with the {ethnicity} {gender} {age} positioned on the right side of the image in a {cabin_color} cabin featuring {seat_type} and {window_tint}. They wear {clothing_phrase}, {glasses_phrase}, {headwear_phrase}, with {seatbelt}; both forearms are visible, one bent up to the side of the head as if on a call, the other angled downward. The scene is {weather} at {time}, under {lighting} lighting.
+---
+[single]
+A high, wide dashboard-mounted camera captures the full front row and part of the rear seats inside a {cabin_color} vehicle with {seat_type} and {window_tint}. On the right side sits a {ethnicity} {gender} {age} wearing {clothing_phrase}, {glasses_phrase}, {headwear_phrase}, with {seatbelt}; their head tilts slightly downward while one hand holds a phone to the ear and the other arm rests near the lap. The scene is {weather} at {time}, under {lighting} lighting.

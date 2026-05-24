@@ -1,0 +1,8 @@
+[single]
+A wide dashboard-mounted camera shows the front cabin of a {cabin_color} car with {seat_type} and {window_tint}, with the driver dominating the left side of the frame. The driver is a {ethnicity} {gender} {age} wearing {clothing_phrase}, {glasses_phrase}, {headwear_phrase}, with {seatbelt}, looking downward with both arms visible near their lap/center console area. The scene is {weather} at {time} under {lighting} lighting.  
+---
+[single]
+From a centered dashcam perspective, the driver’s seat and the empty front passenger seat are both visible, along with the roofline and portions of the side windows in a {cabin_color} cabin with {seat_type} and {window_tint}. A {ethnicity} {gender} {age} driver in {clothing_phrase}, {glasses_phrase}, {headwear_phrase} sits slightly leaned back and looks down, with both forearms/hands visible in the lower-left of frame; {seatbelt}. The scene is {weather} at {time} under {lighting} lighting.  
+---
+[single]
+A high, wide-angle interior camera captures the driver in three-quarter view on the left, with the passenger seat, center area, and window edges framed in a {cabin_color} car featuring {seat_type} and {window_tint}. The driver is a {ethnicity} {gender} {age}, wearing {clothing_phrase}, {glasses_phrase}, {headwear_phrase}, with {seatbelt}, head tilted downward and arms visible as they hold or interact with something near their lap. The scene is {weather} at {time} under {lighting} lighting.
