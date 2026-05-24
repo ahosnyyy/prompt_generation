@@ -203,6 +203,18 @@ def copy_split_images(
         shutil.copy2(src, dst)
 
 
+def split_records(
+    records: list[dict[str, Any]],
+    val_ratio: float,
+    seed: int,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    rng = random.Random(seed)
+    shuffled = records.copy()
+    rng.shuffle(shuffled)
+    val_count = max(1, round(len(shuffled) * val_ratio))
+    return shuffled[val_count:], shuffled[:val_count]
+
+
 def export_dataset(
     run_dir: Path,
     output_dir: Path,
@@ -211,6 +223,8 @@ def export_dataset(
     annotations_dir_name: str = DEFAULT_ANNOTATIONS_DIR,
     ref_id: str | None = None,
     min_confidence: str | None = None,
+    also_roboflow: bool = False,
+    roboflow_output_dir: Path | None = None,
 ) -> dict[str, Any]:
     annotations_dir = run_dir / annotations_dir_name
     if not annotations_dir.is_dir():
@@ -227,13 +241,7 @@ def export_dataset(
             + (f" for ref_id={ref_id}" if ref_id else "")
         )
 
-    rng = random.Random(seed)
-    shuffled = records.copy()
-    rng.shuffle(shuffled)
-
-    val_count = max(1, round(len(shuffled) * val_ratio))
-    val_records = shuffled[:val_count]
-    train_records = shuffled[val_count:]
+    train_records, val_records = split_records(records, val_ratio, seed)
 
     train_dir = output_dir / "train"
     val_dir = output_dir / "val"
@@ -259,7 +267,7 @@ def export_dataset(
         for box in record["boxes"]:
             class_counts[OD_CLASSES[box["category_id"]]] += 1
 
-    return {
+    summary: dict[str, Any] = {
         "dataset_name": DATASET_NAME,
         "output_dir": str(output_dir),
         "annotations_source": str(annotations_dir),
@@ -275,6 +283,24 @@ def export_dataset(
         "seed": seed,
         "od_classes": OD_CLASSES,
     }
+
+    if also_roboflow:
+        from vlm_annotation.export_roboflow import ROBOFLOW_DATASET_NAME, write_roboflow_layout
+
+        rf_dir = (roboflow_output_dir or output_dir.parent / ROBOFLOW_DATASET_NAME).resolve()
+        summary["roboflow"] = write_roboflow_layout(
+            run_dir,
+            rf_dir,
+            train_records,
+            val_records,
+            train_json,
+            val_json,
+            copy_images=True,
+            source_train_dir=train_dir,
+            source_val_dir=val_dir,
+        )
+
+    return summary
 
 
 def main() -> None:
@@ -308,6 +334,17 @@ def main() -> None:
     )
     parser.add_argument("--val-ratio", type=float, default=DEFAULT_VAL_RATIO)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument(
+        "--also-roboflow",
+        action="store_true",
+        help="Also write Roboflow-style layout (train/valid + _annotations.coco.json)",
+    )
+    parser.add_argument(
+        "--roboflow-output-dir",
+        type=Path,
+        default=None,
+        help="Roboflow output directory (default: <run-dir>/synthetic_clothing_v3_roboflow)",
+    )
     args = parser.parse_args()
 
     if not 0.0 < args.val_ratio < 1.0:
@@ -324,6 +361,8 @@ def main() -> None:
         annotations_dir_name=args.annotations_dir,
         ref_id=args.ref_id,
         min_confidence=args.min_confidence,
+        also_roboflow=args.also_roboflow,
+        roboflow_output_dir=args.roboflow_output_dir,
     )
 
     print(json.dumps(summary, indent=2))
