@@ -1,0 +1,40 @@
+{
+  "image_name": "dash_ref_04_000975",
+  "ref_id": "dash_ref_04",
+  "image_path": "images/dash_ref_04/dash_ref_04_000975.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000975__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.39795833333333336,
+        0.14276838016510013,
+        0.5978333333333332,
+        0.7575073540771708
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a puffy quilted jacket, clear eyeglasses, and has no head covering visible."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"heavy_coat\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a puffy quilted jacket, clear eyeglasses, and has no head covering visible.\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000607",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000607.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000607__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.48283333333333334,
+        0.21490807569026943,
+        0.4405833333333333,
+        0.7850919243097305
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a thin zip-up jacket with no visible glasses or headwear, and metadata specifies a single layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a thin zip-up jacket with no visible glasses or headwear, and metadata specifies a single layer.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000607__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.04022916666666666,
+        0.2582169405221939,
+        0.3414166666666667,
+        0.7417830594778061
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a non-puffy hooded jacket, dark sunglasses, and has no visible headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a non-puffy hooded jacket, dark sunglasses, and has no visible headwear.\"\n}"
+    }
+  ]
+}

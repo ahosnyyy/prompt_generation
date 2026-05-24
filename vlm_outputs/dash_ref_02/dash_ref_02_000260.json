@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_02_000260",
+  "ref_id": "dash_ref_02",
+  "image_path": "images/dash_ref_02/dash_ref_02_000260.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_02_000260__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.47728125,
+        0.14177572286128998,
+        0.3959583333333333,
+        0.778261040617438
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "short_sleeve",
+        "glasses": "no_glasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears an open hooded sweatshirt over a visible short-sleeve t-shirt, no glasses, and a baseball cap."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears an open hooded sweatshirt over a visible short-sleeve t-shirt, no glasses, and a baseball cap.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_02_000260__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.0,
+        0.10555880868434908,
+        0.35362499999999997,
+        0.8944411913156509
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a bulky padded coat, a knit beanie, and no glasses, with only one visible clothing layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"heavy_coat\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a bulky padded coat, a knit beanie, and no glasses, with only one visible clothing layer.\"\n}"
+    }
+  ]
+}

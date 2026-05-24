@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000472",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000472.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000472__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.4653958333333333,
+        0.11961397612094879,
+        0.5015000000000001,
+        0.8803860238790512
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_knit",
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "medium",
+          "glasses": "high",
+          "headwear": "medium"
+        },
+        "reason": "Person wears an open light jacket over a knit long-sleeve top, sunglasses, and a wrapped headscarf-style covering."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"long_sleeve_knit\",\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"hijab_headscarf\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"medium\",\n    \"glasses\": \"high\",\n    \"headwear\": \"medium\"\n  },\n  \"reason\": \"Person wears an open light jacket over a knit long-sleeve top, sunglasses, and a wrapped headscarf-style covering.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000472__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.0,
+        0.16889340043067932,
+        0.4373125,
+        0.8311065995693206
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a puffer jacket over a light long-sleeve shirt, with sunglasses and a knit beanie."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"heavy_coat\",\n  \"clothing_inner\": \"long_sleeve_light\",\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a puffer jacket over a light long-sleeve shirt, with sunglasses and a knit beanie.\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000925",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000925.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000925__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.41864583333333333,
+        0.14637867307662966,
+        0.5813541666666666,
+        0.7935110328057233
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a single yellow hoodie with eyeglasses and no separate headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a single yellow hoodie with eyeglasses and no separate headwear.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000925__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.0,
+        0.15180147004127503,
+        0.35575,
+        0.8481985299587249
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "The passenger is wearing a single short-sleeve shirt with no glasses or headwear visible."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"short_sleeve\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"The passenger is wearing a single short-sleeve shirt with no glasses or headwear visible.\"\n}"
+    }
+  ]
+}

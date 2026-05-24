@@ -1,0 +1,40 @@
+{
+  "image_name": "dash_ref_04_000600",
+  "ref_id": "dash_ref_04",
+  "image_path": "images/dash_ref_04/dash_ref_04_000600.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000600__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.2684583333333333,
+        0.15750001418590548,
+        0.6672500000000001,
+        0.8424999858140945
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "The driver is wearing a short-sleeve polo shirt, clear eyeglasses, and has no visible headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"short_sleeve\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"The driver is wearing a short-sleeve polo shirt, clear eyeglasses, and has no visible headwear.\"\n}"
+    }
+  ]
+}

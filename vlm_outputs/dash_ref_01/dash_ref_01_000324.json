@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000324",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000324.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000324__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.4464479166666666,
+        0.19310295021533969,
+        0.49512500000000015,
+        0.8068970497846604
+      ],
+      "prompt_hints": {
+        "clothing_outer": "long_sleeve_light",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a structured light jacket, sunglasses, and no visible headwear, with single-layer metadata."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a structured light jacket, sunglasses, and no visible headwear, with single-layer metadata.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000324__passenger",
+      "role": "passenger",
+      "layering_mode": "closed_outer",
+      "envelope_normalized": [
+        0.0,
+        0.22047425282001498,
+        0.33884375,
+        0.779525747179985
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a structured long-sleeve jacket with no visible inner layer, no glasses, and no headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a structured long-sleeve jacket with no visible inner layer, no glasses, and no headwear.\"\n}"
+    }
+  ]
+}

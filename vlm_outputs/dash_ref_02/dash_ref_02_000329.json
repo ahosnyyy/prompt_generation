@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_02_000329",
+  "ref_id": "dash_ref_02",
+  "image_path": "images/dash_ref_02/dash_ref_02_000329.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_02_000329__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.5028229166666667,
+        0.12549265122413636,
+        0.44695833333333335,
+        0.8745073487758637
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "The driver is wearing a single short-sleeve shirt with no glasses or headwear visible."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"short_sleeve\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"The driver is wearing a single short-sleeve shirt with no glasses or headwear visible.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_02_000329__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.03489583333333334,
+        0.14269486093521122,
+        0.31875,
+        0.8573051390647888
+      ],
+      "prompt_hints": {
+        "clothing_outer": "sleeveless",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "sleeveless",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "The person is wearing a sleeveless top with no visible glasses or headwear and only one clothing layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"sleeveless\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"The person is wearing a sleeveless top with no visible glasses or headwear and only one clothing layer.\"\n}"
+    }
+  ]
+}

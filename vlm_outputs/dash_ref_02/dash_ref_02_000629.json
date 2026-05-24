@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_02_000629",
+  "ref_id": "dash_ref_02",
+  "image_path": "images/dash_ref_02/dash_ref_02_000629.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_02_000629__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.42496875,
+        0.22567650043964388,
+        0.57503125,
+        0.7743234995603561
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "sleeveless",
+        "glasses": "eyeglasses",
+        "headwear": "hijab_headscarf"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "short_sleeve",
+        "glasses": "eyeglasses",
+        "headwear": "hijab_headscarf",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "medium"
+        },
+        "reason": "Person wears an open zip hoodie over a short-sleeve shirt, clear eyeglasses, and a wrapped headscarf."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"hijab_headscarf\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"medium\"\n  },\n  \"reason\": \"Person wears an open zip hoodie over a short-sleeve shirt, clear eyeglasses, and a wrapped headscarf.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_02_000629__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.02637500000000001,
+        0.24988601577281955,
+        0.3201666666666666,
+        0.7501139842271805
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a short-sleeve t-shirt, sunglasses, and a headscarf with no visible additional layers."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"short_sleeve\",\n  \"clothing_inner\": null,\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"hijab_headscarf\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a short-sleeve t-shirt, sunglasses, and a headscarf with no visible additional layers.\"\n}"
+    }
+  ]
+}

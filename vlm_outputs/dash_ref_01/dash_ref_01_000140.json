@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000140",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000140.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000140__driver",
+      "role": "driver",
+      "layering_mode": "closed_outer",
+      "envelope_normalized": [
+        0.4683958333333333,
+        0.1983051633834839,
+        0.4788333333333335,
+        0.8016948366165161
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "bare_scalp"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "long_sleeve_light",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "bare_scalp",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Driver wears a thin long-sleeve shirt, sunglasses, and has a bare scalp with no additional headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"long_sleeve_light\",\n  \"clothing_inner\": null,\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"bare_scalp\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Driver wears a thin long-sleeve shirt, sunglasses, and has a bare scalp with no additional headwear.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000140__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.006885416666666672,
+        0.2524154644012451,
+        0.40445833333333325,
+        0.6808565951235155
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "short_sleeve",
+        "glasses": "sunglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "sunglasses",
+        "headwear": "bare_scalp",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears an open light jacket over a short-sleeve polo, with sunglasses and no headwear, showing bare scalp."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"bare_scalp\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears an open light jacket over a short-sleeve polo, with sunglasses and no headwear, showing bare scalp.\"\n}"
+    }
+  ]
+}

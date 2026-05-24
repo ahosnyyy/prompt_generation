@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000740",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000740.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000740__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.5017916666666667,
+        0.15289702951908113,
+        0.49820833333333325,
+        0.8471029704809189
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a non-puffy jacket over a visible light long-sleeve shirt, no glasses, and a baseball-style cap."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"long_sleeve_light\",\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a non-puffy jacket over a visible light long-sleeve shirt, no glasses, and a baseball-style cap.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000740__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.0,
+        0.1954889497756958,
+        0.4022708333333333,
+        0.7003750213384627
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a thin structured jacket, clear eyeglasses, and a baseball-style cap with no visible inner layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a thin structured jacket, clear eyeglasses, and a baseball-style cap with no visible inner layer.\"\n}"
+    }
+  ]
+}

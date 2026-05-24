@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000466",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000466.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000466__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.43687499999999996,
+        0.21037134110927583,
+        0.5241666666666667,
+        0.7896286588907242
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Driver wears a quilted puffer-style jacket over a light long-sleeve shirt, clear eyeglasses, and has a bare scalp."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"heavy_coat\",\n  \"clothing_inner\": \"long_sleeve_light\",\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"bare_scalp\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Driver wears a quilted puffer-style jacket over a light long-sleeve shirt, clear eyeglasses, and has a bare scalp.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000466__passenger",
+      "role": "passenger",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.011989583333333345,
+        0.2870551735162735,
+        0.397375,
+        0.7006286491365994
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a thick fleece zip-up with no visible inner layer, no glasses, and a knit beanie."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a thick fleece zip-up with no visible inner layer, no glasses, and a knit beanie.\"\n}"
+    }
+  ]
+}

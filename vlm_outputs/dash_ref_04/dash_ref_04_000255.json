@@ -1,0 +1,40 @@
+{
+  "image_name": "dash_ref_04_000255",
+  "ref_id": "dash_ref_04",
+  "image_path": "images/dash_ref_04/dash_ref_04_000255.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000255__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.38044791666666666,
+        0.11093751215934752,
+        0.533375,
+        0.8890624878406524
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears an open knit zip hoodie over a light long-sleeve shirt, with sunglasses and a beanie."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": \"long_sleeve_light\",\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears an open knit zip hoodie over a light long-sleeve shirt, with sunglasses and a beanie.\"\n}"
+    }
+  ]
+}

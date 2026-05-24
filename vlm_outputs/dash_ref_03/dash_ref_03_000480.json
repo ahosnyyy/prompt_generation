@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000480",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000480.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000480__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.5805416666666667,
+        0.17567278885841373,
+        0.3201666666666665,
+        0.8243272111415862
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "medium",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a textured collared jacket, no visible glasses, and a knit beanie."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"medium\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a textured collared jacket, no visible glasses, and a knit beanie.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000480__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.019145833333333334,
+        0.17653308379650115,
+        0.4377500000000001,
+        0.8234669162034989
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_knit",
+        "glasses": "no_glasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "medium",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears an open light jacket over a knit long-sleeve top, no glasses, and a beanie."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"long_sleeve_knit\",\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"medium\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears an open light jacket over a knit long-sleeve top, no glasses, and a beanie.\"\n}"
+    }
+  ]
+}

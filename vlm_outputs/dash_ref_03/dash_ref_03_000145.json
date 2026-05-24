@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000145",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000145.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000145__driver",
+      "role": "driver",
+      "layering_mode": "closed_outer",
+      "envelope_normalized": [
+        0.50525,
+        0.1956580675840378,
+        0.3853333333333334,
+        0.800389725131147
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a patterned blazer-style light jacket, dark hijab, and dark aviator-style sunglasses with no visible inner layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"hijab_headscarf\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a patterned blazer-style light jacket, dark hijab, and dark aviator-style sunglasses with no visible inner layer.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000145__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.02570833333333334,
+        0.1984485137462616,
+        0.38816666666666666,
+        0.6558713386689915
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "no_glasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a light zip jacket over a short-sleeve polo, no glasses, and a baseball-style cap."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a light zip jacket over a short-sleeve polo, no glasses, and a baseball-style cap.\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "image_name": "dash_ref_04_000914",
+  "ref_id": "dash_ref_04",
+  "image_path": "images/dash_ref_04/dash_ref_04_000914.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000914__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.2997291666666667,
+        0.06693014240264894,
+        0.47033333333333327,
+        0.9330698575973511
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a structured buttoned jacket, clear eyeglasses, and a baseball cap with no visible inner layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a structured buttoned jacket, clear eyeglasses, and a baseball cap with no visible inner layer.\"\n}"
+    }
+  ]
+}

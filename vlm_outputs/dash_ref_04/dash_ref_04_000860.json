@@ -1,0 +1,40 @@
+{
+  "image_name": "dash_ref_04_000860",
+  "ref_id": "dash_ref_04",
+  "image_path": "images/dash_ref_04/dash_ref_04_000860.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000860__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.249375,
+        0.1396654704809189,
+        0.750625,
+        0.7705367355767418
+      ],
+      "prompt_hints": {
+        "clothing_outer": "long_sleeve_light",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "cap"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "long_sleeve_knit",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "cap",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a single knit long-sleeve top, clear eyeglasses, and a baseball cap."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"long_sleeve_knit\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"cap\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a single knit long-sleeve top, clear eyeglasses, and a baseball cap.\"\n}"
+    }
+  ]
+}

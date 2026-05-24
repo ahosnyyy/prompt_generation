@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000258",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000258.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000258__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.5494270833333332,
+        0.27266177511215206,
+        0.38604166666666684,
+        0.7273382248878479
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Driver is wearing a short-sleeve polo shirt, a knit beanie, and no glasses, with only one visible clothing layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"short_sleeve\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Driver is wearing a short-sleeve polo shirt, a knit beanie, and no glasses, with only one visible clothing layer.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000258__passenger",
+      "role": "passenger",
+      "layering_mode": "closed_outer",
+      "envelope_normalized": [
+        0.061218750000000016,
+        0.2669191076755524,
+        0.3520416666666666,
+        0.7330808923244476
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "long_sleeve_knit",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a closed long-sleeve textured knit shirt or jacket, with no visible inner layer, glasses, or headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"long_sleeve_knit\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a closed long-sleeve textured knit shirt or jacket, with no visible inner layer, glasses, or headwear.\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_01_000976",
+  "ref_id": "dash_ref_01",
+  "image_path": "images/dash_ref_01/dash_ref_01_000976.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_01_000976__driver",
+      "role": "driver",
+      "layering_mode": "single",
+      "envelope_normalized": [
+        0.47516666666666674,
+        0.18876840448379517,
+        0.4788333333333332,
+        0.8112315955162048
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "hijab_headscarf"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "beanie",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a light zip jacket, clear eyeglasses, and a knit beanie with no visible inner layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"beanie\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a light zip jacket, clear eyeglasses, and a knit beanie with no visible inner layer.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_01_000976__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.0,
+        0.24520593082904812,
+        0.4041666666666666,
+        0.7547940691709518
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "eyeglasses",
+        "headwear": "hijab_headscarf",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "low",
+          "glasses": "high",
+          "headwear": "medium"
+        },
+        "reason": "Person wears a yellow hoodie, clear eyeglasses, and a wrapped headscarf with no visible inner layer."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": null,\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"hijab_headscarf\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"low\",\n    \"glasses\": \"high\",\n    \"headwear\": \"medium\"\n  },\n  \"reason\": \"Person wears a yellow hoodie, clear eyeglasses, and a wrapped headscarf with no visible inner layer.\"\n}"
+    }
+  ]
+}

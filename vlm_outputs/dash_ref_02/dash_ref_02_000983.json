@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_02_000983",
+  "ref_id": "dash_ref_02",
+  "image_path": "images/dash_ref_02/dash_ref_02_000983.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_02_000983__driver",
+      "role": "driver",
+      "layering_mode": "closed_outer",
+      "envelope_normalized": [
+        0.4700416666666667,
+        0.138933810710907,
+        0.5299583333333333,
+        0.861066189289093
+      ],
+      "prompt_hints": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "heavy_coat",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": null,
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person is wearing a closed quilted puffer-style coat with no visible inner layer, no glasses, and no headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"heavy_coat\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": null,\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person is wearing a closed quilted puffer-style coat with no visible inner layer, no glasses, and no headwear.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_02_000983__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.08303124999999999,
+        0.1940220538377762,
+        0.34070833333333334,
+        0.8059779461622238
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "high",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears a light zip jacket over a short-sleeve shirt, has eyeglasses, and a shaved/bare scalp."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"eyeglasses\",\n  \"headwear\": \"bare_scalp\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"high\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears a light zip jacket over a short-sleeve shirt, has eyeglasses, and a shaved/bare scalp.\"\n}"
+    }
+  ]
+}

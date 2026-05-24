@@ -1,0 +1,71 @@
+{
+  "image_name": "dash_ref_03_000144",
+  "ref_id": "dash_ref_03",
+  "image_path": "images/dash_ref_03/dash_ref_03_000144.png",
+  "width": 1920,
+  "height": 1088,
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000144__driver",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.5118958333333332,
+        0.1853786609172821,
+        0.25641666666666674,
+        0.7780404570803923
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "short_sleeve",
+        "glasses": "sunglasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "high",
+          "clothing_inner": "medium",
+          "glasses": "high",
+          "headwear": "high"
+        },
+        "reason": "Person wears an open light jacket over a likely short-sleeve shirt, with sunglasses and no headwear visible."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"light_jacket\",\n  \"clothing_inner\": \"short_sleeve\",\n  \"glasses\": \"sunglasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"high\",\n    \"clothing_inner\": \"medium\",\n    \"glasses\": \"high\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person wears an open light jacket over a likely short-sleeve shirt, with sunglasses and no headwear visible.\"\n}"
+    },
+    {
+      "person_id": "dash_ref_03_000144__passenger",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "envelope_normalized": [
+        0.21796875,
+        0.3226838235294118,
+        0.19479166666666664,
+        0.46647058823529414
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "vlm_parsed": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "no_headwear",
+        "confidence": {
+          "clothing_outer": "medium",
+          "clothing_inner": "low",
+          "glasses": "medium",
+          "headwear": "high"
+        },
+        "reason": "Person appears to wear a patterned knit hoodie or sweatshirt with no clearly visible inner layer, no glasses, and no headwear."
+      },
+      "vlm_raw": "{\n  \"clothing_outer\": \"knit_hoodie\",\n  \"clothing_inner\": null,\n  \"glasses\": \"no_glasses\",\n  \"headwear\": \"no_headwear\",\n  \"confidence\": {\n    \"clothing_outer\": \"medium\",\n    \"clothing_inner\": \"low\",\n    \"glasses\": \"medium\",\n    \"headwear\": \"high\"\n  },\n  \"reason\": \"Person appears to wear a patterned knit hoodie or sweatshirt with no clearly visible inner layer, no glasses, and no headwear.\"\n}"
+    }
+  ]
+}
