@@ -25,13 +25,15 @@ import argparse
 import json
 import shutil
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 from vlm_annotation.export_coco import (
     DATASET_NAME,
     DEFAULT_ANNOTATIONS_DIR,
     DEFAULT_SEED,
+    DEFAULT_SPLIT_BY,
     DEFAULT_VAL_RATIO,
+    SPLIT_BY_CHOICES,
     build_split_coco,
     copy_split_images,
     load_passed_records,
@@ -121,6 +123,7 @@ def export_roboflow_dataset(
     annotations_dir_name: str = DEFAULT_ANNOTATIONS_DIR,
     ref_id: str | None = None,
     min_confidence: str | None = None,
+    split_by: Literal["ref", "global"] = DEFAULT_SPLIT_BY,
 ) -> dict[str, Any]:
     """Export Roboflow layout directly from annotations_vlm/."""
     annotations_dir = run_dir / annotations_dir_name
@@ -138,7 +141,7 @@ def export_roboflow_dataset(
             + (f" for ref_id={ref_id}" if ref_id else "")
         )
 
-    train_records, val_records = split_records(records, val_ratio, seed)
+    train_records, val_records = split_records(records, val_ratio, seed, split_by=split_by)
     train_json = build_split_coco(train_records)
     val_json = build_split_coco(val_records)
 
@@ -158,6 +161,7 @@ def export_roboflow_dataset(
             "min_confidence": min_confidence,
             "val_ratio": val_ratio,
             "seed": seed,
+            "split_by": split_by,
         }
     )
     return summary
@@ -237,6 +241,12 @@ def main() -> None:
     )
     parser.add_argument("--val-ratio", type=float, default=DEFAULT_VAL_RATIO)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument(
+        "--split-by",
+        choices=SPLIT_BY_CHOICES,
+        default=DEFAULT_SPLIT_BY,
+        help="Train/val split strategy (default: ref = ~val-ratio per ref_id)",
+    )
     args = parser.parse_args()
 
     if not 0.0 < args.val_ratio < 1.0:
@@ -256,6 +266,7 @@ def main() -> None:
             annotations_dir_name=args.annotations_dir,
             ref_id=args.ref_id,
             min_confidence=args.min_confidence,
+            split_by=args.split_by,
         )
 
     print(json.dumps(summary, indent=2))

@@ -19,9 +19,10 @@ import argparse
 import json
 import random
 import shutil
+from collections import defaultdict
 from datetime import date
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 from vlm_annotation.taxonomy import (
     CLOTHING_CLASSES,
@@ -35,6 +36,8 @@ from vlm_annotation.taxonomy import (
 
 DEFAULT_VAL_RATIO = 0.1
 DEFAULT_SEED = 42
+DEFAULT_SPLIT_BY = "ref"
+SPLIT_BY_CHOICES = ("ref", "global")
 DATASET_NAME = "synthetic_clothing_v3"
 DEFAULT_ANNOTATIONS_DIR = "annotations_vlm"
 
@@ -203,7 +206,7 @@ def copy_split_images(
         shutil.copy2(src, dst)
 
 
-def split_records(
+def split_records_global(
     records: list[dict[str, Any]],
     val_ratio: float,
     seed: int,
@@ -213,6 +216,58 @@ def split_records(
     rng.shuffle(shuffled)
     val_count = max(1, round(len(shuffled) * val_ratio))
     return shuffled[val_count:], shuffled[:val_count]
+
+
+def split_records_by_ref(
+    records: list[dict[str, Any]],
+    val_ratio: float,
+    seed: int,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Hold out ~val_ratio from each ref independently (stable per-ref val)."""
+    by_ref: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for record in records:
+        by_ref[record.get("ref_id") or "__unknown__"].append(record)
+
+    train_records: list[dict[str, Any]] = []
+    val_records: list[dict[str, Any]] = []
+
+    for ref_id in sorted(by_ref):
+        group = by_ref[ref_id]
+        rng = random.Random(f"{seed}:{ref_id}")
+        shuffled = group.copy()
+        rng.shuffle(shuffled)
+        val_count = max(1, round(len(shuffled) * val_ratio))
+        val_records.extend(shuffled[:val_count])
+        train_records.extend(shuffled[val_count:])
+
+    return train_records, val_records
+
+
+def ref_split_counts(
+    train_records: list[dict[str, Any]],
+    val_records: list[dict[str, Any]],
+) -> dict[str, dict[str, int]]:
+    counts: dict[str, dict[str, int]] = defaultdict(lambda: {"train": 0, "val": 0})
+    for record in train_records:
+        ref_id = record.get("ref_id") or "__unknown__"
+        counts[ref_id]["train"] += 1
+    for record in val_records:
+        ref_id = record.get("ref_id") or "__unknown__"
+        counts[ref_id]["val"] += 1
+    return {ref_id: dict(split) for ref_id, split in sorted(counts.items())}
+
+
+def split_records(
+    records: list[dict[str, Any]],
+    val_ratio: float,
+    seed: int,
+    split_by: Literal["ref", "global"] = DEFAULT_SPLIT_BY,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    if split_by == "global":
+        return split_records_global(records, val_ratio, seed)
+    if split_by == "ref":
+        return split_records_by_ref(records, val_ratio, seed)
+    raise ValueError(f"Unsupported split_by: {split_by}")
 
 
 def export_dataset(
@@ -225,6 +280,7 @@ def export_dataset(
     min_confidence: str | None = None,
     also_roboflow: bool = False,
     roboflow_output_dir: Path | None = None,
+    split_by: Literal["ref", "global"] = DEFAULT_SPLIT_BY,
 ) -> dict[str, Any]:
     annotations_dir = run_dir / annotations_dir_name
     if not annotations_dir.is_dir():
@@ -241,7 +297,7 @@ def export_dataset(
             + (f" for ref_id={ref_id}" if ref_id else "")
         )
 
-    train_records, val_records = split_records(records, val_ratio, seed)
+    train_records, val_records = split_records(records, val_ratio, seed, split_by=split_by)
 
     train_dir = output_dir / "train"
     val_dir = output_dir / "val"
@@ -281,6 +337,8 @@ def export_dataset(
         "class_counts": class_counts,
         "val_ratio": val_ratio,
         "seed": seed,
+        "split_by": split_by,
+        "ref_split_counts": ref_split_counts(train_records, val_records),
         "od_classes": OD_CLASSES,
     }
 
@@ -335,6 +393,12 @@ def main() -> None:
     parser.add_argument("--val-ratio", type=float, default=DEFAULT_VAL_RATIO)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument(
+        "--split-by",
+        choices=SPLIT_BY_CHOICES,
+        default=DEFAULT_SPLIT_BY,
+        help="Train/val split strategy (default: ref = ~val-ratio per ref_id)",
+    )
+    parser.add_argument(
         "--also-roboflow",
         action="store_true",
         help="Also write Roboflow-style layout (train/valid + _annotations.coco.json)",
@@ -363,6 +427,7 @@ def main() -> None:
         min_confidence=args.min_confidence,
         also_roboflow=args.also_roboflow,
         roboflow_output_dir=args.roboflow_output_dir,
+        split_by=args.split_by,
     )
 
     print(json.dumps(summary, indent=2))
