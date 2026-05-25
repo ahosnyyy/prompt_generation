@@ -1,0 +1,16 @@
+# RT-DETR v3 Categories
+# synthetic_clothing_v3 — Option A taxonomy (option_a_v2), num_classes: 10
+# Source of truth: vlm_annotation/taxonomy.py
+# Export: python -m vlm_annotation.export_coco
+
+categories:
+  0: "sleeveless"
+  1: "short_sleeve"
+  2: "long_sleeve_light"
+  3: "long_sleeve_knit"
+  4: "knit_hoodie"
+  5: "light_jacket"
+  6: "heavy_coat"
+  7: "eyeglasses"
+  8: "sunglasses"
+  9: "headwear"

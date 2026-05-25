@@ -1,0 +1,16 @@
+# RT-DETR v2 Categories
+# synthetic_clothing_v2 — matches configs/dataset/clothing_detection_v2.yml (num_classes: 12)
+
+categories:
+  0: "sleeveless_top"
+  1: "short_sleeve_top"
+  2: "long_sleeve_plain"
+  3: "long_sleeve_collared"
+  4: "hoodie_sweatshirt"
+  5: "light_jacket"
+  6: "heavy_jacket_coat"
+  7: "eyeglasses"
+  8: "sunglasses"
+  9: "cap"
+  10: "beanie"
+  11: "hijab_headscarf"

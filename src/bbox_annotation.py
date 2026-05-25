@@ -342,11 +342,11 @@ def compute_torso_bbox(pose: PosePerson) -> Bbox | None:
             return None
 
     h = max(bbox.y_max - bbox.y_min, 0.05)
-    padded = _pad_bbox(bbox, pad_x=0.12, pad_y_top=0.25, pad_y_bottom=0.06)
+    padded = _pad_bbox(bbox, pad_x=0.12, pad_y_top=0.4, pad_y_bottom=0.06)
 
     mouth_bottom = _mouth_bottom_y(pose)
     if mouth_bottom is not None:
-        min_top = mouth_bottom + 0.008
+        min_top = mouth_bottom + 0.003
         if padded.y_min < min_top:
             padded = Bbox(
                 x_min=padded.x_min,
