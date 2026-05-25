@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "image_name": "dash_ref_04_000063",
+    "ref_id": "dash_ref_04",
+    "width": 1920,
+    "height": 1088,
+    "image_path": "images/dash_ref_04/dash_ref_04_000063.png",
+    "occupancy": 1,
+    "passed": true,
+    "fail_reason": null,
+    "warnings": [],
+    "checks": {
+      "expected_occupancy": 1,
+      "detected_pose_count": 1,
+      "matched_person_count": 1
+    },
+    "ignored_pose_indices": []
+  },
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000063__driver",
+      "image_name": "dash_ref_04_000063",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "pose_index": 0,
+      "pose_score": 9,
+      "envelope_normalized": [
+        0.23492708333333331,
+        0.06665073502063754,
+        0.6254583333333333,
+        0.9333492649793624
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "short_sleeve",
+        "glasses": "no_glasses",
+        "headwear": "no_headwear"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.2625208333333333,
+            0.4078161852359772,
+            0.5702708333333333,
+            0.5921838147640228
+          ],
+          "prompt_hint": "knit_hoodie"
+        },
+        {
+          "area": "clothing_inner",
+          "bbox_normalized": [
+            0.462115625,
+            0.44334721412181854,
+            0.17108125000000002,
+            0.5211217569923401
+          ],
+          "prompt_hint": "short_sleeve"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.48062500506639483,
+            0.24301470279693604,
+            0.11375000774860378,
+            0.07444851994514462
+          ],
+          "prompt_hint": "no_glasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.46763540983200075,
+            0.06665073502063754,
+            0.1579583549499512,
+            0.20228906454145903
+          ],
+          "prompt_hint": "no_headwear"
+        }
+      ]
+    }
+  ]
+}

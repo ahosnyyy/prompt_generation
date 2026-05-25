@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "image_name": "dash_ref_04_000555",
+    "ref_id": "dash_ref_04",
+    "width": 1920,
+    "height": 1088,
+    "image_path": "images/dash_ref_04/dash_ref_04_000555.png",
+    "occupancy": 1,
+    "passed": true,
+    "fail_reason": null,
+    "warnings": [],
+    "checks": {
+      "expected_occupancy": 1,
+      "detected_pose_count": 1,
+      "matched_person_count": 1
+    },
+    "ignored_pose_indices": []
+  },
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000555__driver",
+      "image_name": "dash_ref_04_000555",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "pose_index": 0,
+      "pose_score": 9,
+      "envelope_normalized": [
+        0.37997916666666665,
+        0.12653677916526795,
+        0.43066666666666675,
+        0.873463220834732
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "short_sleeve",
+        "glasses": "eyeglasses",
+        "headwear": "bare_scalp"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.39897916666666666,
+            0.44733823704719544,
+            0.3926666666666667,
+            0.5526617629528046
+          ],
+          "prompt_hint": "knit_hoodie"
+        },
+        {
+          "area": "clothing_inner",
+          "bbox_normalized": [
+            0.5364125,
+            0.48049794282436376,
+            0.11780000000000013,
+            0.48634235139846793
+          ],
+          "prompt_hint": "short_sleeve"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.5583854019641876,
+            0.28198530077934264,
+            0.11239582300186157,
+            0.10753673315048218
+          ],
+          "prompt_hint": "eyeglasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.5365624761581421,
+            0.12653677916526795,
+            0.14874999999999994,
+            0.20121873366832732
+          ],
+          "prompt_hint": "bare_scalp"
+        }
+      ]
+    }
+  ]
+}

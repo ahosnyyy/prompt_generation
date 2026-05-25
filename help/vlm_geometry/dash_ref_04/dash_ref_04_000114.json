@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "image_name": "dash_ref_04_000114",
+    "ref_id": "dash_ref_04",
+    "width": 1920,
+    "height": 1088,
+    "image_path": "images/dash_ref_04/dash_ref_04_000114.png",
+    "occupancy": 1,
+    "passed": true,
+    "fail_reason": null,
+    "warnings": [],
+    "checks": {
+      "expected_occupancy": 1,
+      "detected_pose_count": 1,
+      "matched_person_count": 1
+    },
+    "ignored_pose_indices": []
+  },
+  "persons": [
+    {
+      "person_id": "dash_ref_04_000114__driver",
+      "image_name": "dash_ref_04_000114",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "pose_index": 0,
+      "pose_score": 8,
+      "envelope_normalized": [
+        0.19738541666666665,
+        0.09279043602943424,
+        0.8026145833333334,
+        0.9072095639705657
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "eyeglasses",
+        "headwear": "beanie"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.23297916666666663,
+            0.4721544222831726,
+            0.7356041666666666,
+            0.5278455777168274
+          ],
+          "prompt_hint": "knit_hoodie"
+        },
+        {
+          "area": "clothing_inner",
+          "bbox_normalized": [
+            0.49044062499999996,
+            0.5038251569461822,
+            0.22068124999999994,
+            0.46450410839080813
+          ],
+          "prompt_hint": "long_sleeve_light"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.486953142285347,
+            0.2775735282897949,
+            0.14015620350837704,
+            0.08272061347961424
+          ],
+          "prompt_hint": "eyeglasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.47154165208339693,
+            0.09279043602943424,
+            0.1756667017936706,
+            0.21299219974875447
+          ],
+          "prompt_hint": "beanie"
+        }
+      ]
+    }
+  ]
+}

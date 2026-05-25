@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "image_name": "dash_ref_03_000508",
+    "ref_id": "dash_ref_03",
+    "width": 1920,
+    "height": 1088,
+    "image_path": "images/dash_ref_03/dash_ref_03_000508.png",
+    "occupancy": 2,
+    "passed": true,
+    "fail_reason": null,
+    "warnings": [],
+    "checks": {
+      "expected_occupancy": 2,
+      "detected_pose_count": 2,
+      "matched_person_count": 2
+    },
+    "ignored_pose_indices": []
+  },
+  "persons": [
+    {
+      "person_id": "dash_ref_03_000508__driver",
+      "image_name": "dash_ref_03_000508",
+      "role": "driver",
+      "layering_mode": "open_outer",
+      "pose_index": 1,
+      "pose_score": 6,
+      "envelope_normalized": [
+        0.5545208333333334,
+        0.19066545021533968,
+        0.33575,
+        0.7453639608481352
+      ],
+      "prompt_hints": {
+        "clothing_outer": "knit_hoodie",
+        "clothing_inner": "long_sleeve_light",
+        "glasses": "sunglasses",
+        "headwear": "hijab_headscarf"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.5693333333333334,
+            0.5103400735294118,
+            0.306125,
+            0.38890625
+          ],
+          "prompt_hint": "knit_hoodie"
+        },
+        {
+          "area": "clothing_inner",
+          "bbox_normalized": [
+            0.6764770833333333,
+            0.5336744485294118,
+            0.09183750000000002,
+            0.3422375
+          ],
+          "prompt_hint": "long_sleeve_light"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.6927864879369736,
+            0.33180147886276246,
+            0.10765623450279227,
+            0.08272055983543397
+          ],
+          "prompt_hint": "sunglasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.665104159116745,
+            0.19066545021533968,
+            0.1416666936874389,
+            0.1616171854585409
+          ],
+          "prompt_hint": "hijab_headscarf"
+        }
+      ]
+    },
+    {
+      "person_id": "dash_ref_03_000508__passenger",
+      "image_name": "dash_ref_03_000508",
+      "role": "passenger",
+      "layering_mode": "closed_outer",
+      "pose_index": 0,
+      "pose_score": 8,
+      "envelope_normalized": [
+        0.0,
+        0.16582353198528288,
+        0.4083229166666667,
+        0.8341764680147171
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": null,
+        "glasses": "no_glasses",
+        "headwear": "beanie"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.0,
+            0.482766544117647,
+            0.3908916666666667,
+            0.517233455882353
+          ],
+          "prompt_hint": "light_jacket"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.13989583775401115,
+            0.3202205991744995,
+            0.10562499612569809,
+            0.07444851994514462
+          ],
+          "prompt_hint": "no_glasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.1339895898103714,
+            0.16582353198528288,
+            0.13670831441879272,
+            0.17553124387562274
+          ],
+          "prompt_hint": "beanie"
+        }
+      ]
+    }
+  ]
+}

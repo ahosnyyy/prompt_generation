@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "image_name": "dash_ref_02_000028",
+    "ref_id": "dash_ref_02",
+    "width": 1920,
+    "height": 1088,
+    "image_path": "images/dash_ref_02/dash_ref_02_000028.png",
+    "occupancy": 2,
+    "passed": true,
+    "fail_reason": null,
+    "warnings": [],
+    "checks": {
+      "expected_occupancy": 2,
+      "detected_pose_count": 2,
+      "matched_person_count": 2
+    },
+    "ignored_pose_indices": []
+  },
+  "persons": [
+    {
+      "person_id": "dash_ref_02_000028__driver",
+      "image_name": "dash_ref_02_000028",
+      "role": "driver",
+      "layering_mode": "single",
+      "pose_index": 1,
+      "pose_score": 9,
+      "envelope_normalized": [
+        0.5843541666666666,
+        0.2788676633834839,
+        0.4156458333333334,
+        0.7211323366165161
+      ],
+      "prompt_hints": {
+        "clothing_outer": "short_sleeve",
+        "clothing_inner": null,
+        "glasses": "sunglasses",
+        "headwear": "no_headwear"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.6039791666666666,
+            0.5392922794117647,
+            0.3960208333333334,
+            0.4607077205882353
+          ],
+          "prompt_hint": "short_sleeve"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.703750017285347,
+            0.4071323561668396,
+            0.08937495350837699,
+            0.06286765336990352
+          ],
+          "prompt_hint": "sunglasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.6728021204471588,
+            0.2788676633834839,
+            0.1267915964126587,
+            0.1412812459170818
+          ],
+          "prompt_hint": "no_headwear"
+        }
+      ]
+    },
+    {
+      "person_id": "dash_ref_02_000028__passenger",
+      "image_name": "dash_ref_02_000028",
+      "role": "passenger",
+      "layering_mode": "open_outer",
+      "pose_index": 0,
+      "pose_score": 7,
+      "envelope_normalized": [
+        0.03995833333333334,
+        0.24933821880817417,
+        0.35133333333333333,
+        0.7506617811918258
+      ],
+      "prompt_hints": {
+        "clothing_outer": "light_jacket",
+        "clothing_inner": "sleeveless",
+        "glasses": "eyeglasses",
+        "headwear": "cap"
+      },
+      "export_slots": [
+        {
+          "area": "clothing_outer",
+          "bbox_normalized": [
+            0.036514583333333336,
+            0.5073529411764706,
+            0.3497833333333333,
+            0.49264705882352944
+          ],
+          "prompt_hint": "light_jacket"
+        },
+        {
+          "area": "clothing_inner",
+          "bbox_normalized": [
+            0.15893875,
+            0.5369117647058823,
+            0.10493499999999997,
+            0.43352941176470594
+          ],
+          "prompt_hint": "sleeveless"
+        },
+        {
+          "area": "glasses",
+          "bbox_normalized": [
+            0.17005209103226662,
+            0.3555147218704224,
+            0.0880208268761635,
+            0.06617642641067506
+          ],
+          "prompt_hint": "eyeglasses"
+        },
+        {
+          "area": "headwear",
+          "bbox_normalized": [
+            0.15812499433755875,
+            0.24933821880817417,
+            0.12750002026557924,
+            0.1284375183731317
+          ],
+          "prompt_hint": "cap"
+        }
+      ]
+    }
+  ]
+}
